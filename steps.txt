@@ -1,0 +1,20 @@
+//Steps
+
+** Turn off potential warnings because of incorrect XML.
+** Create a DOMDocument and load the HTML with the loadHTML method.
+** Create a DOMXPath, and perform a query to select only the table containing all images.
+** Create a new DOMDocument and import the selected nodes in it.
+
+Note: we do this to simplify the XSL stylesheet.
+Create a XSL stylesheet to create a CSV file with format:
+"day (h2)":"description (img alt)";"url (img src)"
+Restore previous warning mode.
+
+
+//Help
+
+http://en.wikipedia.org/wiki/XSLT
+http://php.net/manual/en/class.domdocument.php
+http://php.net/manual/en/class.domxpath.php
+http://php.net/manual/en/class.xsltprocessor.php
+[https://github.com/symfony/symfony/blob/33ff623cb04487560ffe5241ab2c063edc495751/src/Symfony/Component/Config/Util/XmlUtils.php#L41-L104](How to load very cleanly an XML document)
